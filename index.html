@@ -1,0 +1,2221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>
+      Razorpay &mdash; Best Payment Solution for Online Payments India
+    </title>
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="./build/resources/css/style.css" />
+    <!-- js -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navMenuBtn = document.querySelector("#nav__toggle__btn");
+        const navBarEl = document.querySelector("#nav__bar");
+
+        navMenuBtn.addEventListener("click", () => {
+          navBarEl.classList.toggle("nav__open");
+        });
+      });
+    </script>
+  </head>
+  <body class="font-mulish">
+    <!-- start of navigation -->
+    <header class="header relative z-50 bg-deepBlue">
+      <nav
+        class="relatives container flex items-center gap-8 font-mulish py-4 lg:py-0"
+        id="nav__bar"
+      >
+        <!-- start of nav logo -->
+        <a href="#">
+          <svg
+            viewBox="0 0 286 147"
+            focusable="false"
+            class="h-[50px] fill-white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M28.3097 78.8456C22.5314 78.8456 17.5283 77.7181 13.3002 75.4632C9.07224 73.2083 5.83077 70.0373 3.57584 65.9502C1.39137 61.7926 0.299132 56.8952 0.299132 51.2579C0.299132 45.6205 1.49707 40.6879 3.89294 36.4598C6.28881 32.2318 9.63598 28.9551 13.9344 26.6297C18.2329 24.2339 23.2713 23.0359 29.0496 23.0359C32.8548 23.0359 36.5895 23.6349 40.2538 24.8328C43.9181 26.0308 46.8777 27.6515 49.1326 29.695L44.9046 40.7935C42.7906 39.1023 40.4652 37.7987 37.9284 36.8826C35.3916 35.8961 32.9252 35.4028 30.5294 35.4028C26.2309 35.4028 22.8485 36.7065 20.3822 39.3137C17.9158 41.921 16.6827 45.7967 16.6827 50.9408C16.6827 56.1553 17.8806 60.0662 20.2765 62.6735C22.7428 65.2807 26.1604 66.5844 30.5294 66.5844C32.9252 66.5844 35.3916 66.1264 37.9284 65.2103C40.4652 64.2942 42.7906 62.9553 44.9046 61.1937L49.1326 72.2922C46.8072 74.3357 43.7771 75.9565 40.0424 77.1544C36.3076 78.2819 32.3967 78.8456 28.3097 78.8456ZM74.2669 78.8456C67.5726 78.8456 62.5694 76.9782 59.2575 73.2435C55.9456 69.5088 54.2896 63.8714 54.2896 56.3315V24.41H70.2503V56.6486C70.2503 59.9605 70.9198 62.4268 72.2586 64.0476C73.668 65.5979 75.8172 66.373 78.7063 66.373C81.9478 66.373 84.5903 65.2455 86.6338 62.9906C88.6774 60.7356 89.6992 57.7408 89.6992 54.0061V24.41H105.766V78H90.2277V67.3243L91.6018 67.43C90.0515 71.1647 87.7613 74.0186 84.7312 75.9917C81.7716 77.8943 78.2835 78.8456 74.2669 78.8456ZM114.48 78V39.7365C114.48 37.1997 114.41 34.6629 114.269 32.1261C114.198 29.5189 113.987 26.9468 113.634 24.41H128.644L130.335 38.5738L128.644 37.7282C129.489 32.9365 131.498 29.3075 134.669 26.8411C137.91 24.3748 141.575 23.1416 145.662 23.1416C146.86 23.1416 147.917 23.2473 148.833 23.4587C149.819 23.6701 150.665 23.9168 151.369 24.1986L151.264 38.7852C148.656 37.5873 146.049 36.9883 143.442 36.9883C140.553 36.9883 138.157 37.5168 136.254 38.5738C134.422 39.6308 132.978 41.1459 131.921 43.119C130.934 45.0216 130.441 47.3117 130.441 49.9895V78H114.48ZM158.891 78V0.204695H174.851V78H158.891ZM230.81 72.2922C228.203 74.3357 225.032 75.9565 221.297 77.1544C217.563 78.2819 213.793 78.8456 209.988 78.8456C203.998 78.8456 198.819 77.7181 194.45 75.4632C190.151 73.2083 186.839 70.002 184.514 65.8445C182.188 61.6869 181.026 56.7543 181.026 51.0465C181.026 45.5501 182.153 40.6879 184.408 36.4598C186.663 32.2318 189.728 28.9551 193.604 26.6297C197.55 24.2339 202.131 23.0359 207.345 23.0359C212.348 23.0359 216.682 24.1634 220.346 26.4183C224.01 28.6028 226.829 31.7386 228.802 35.8256C230.775 39.8423 231.762 44.634 231.762 50.2009V52.5263H195.084L195.295 44.5988H222.249L218.126 47.8755C218.197 43.3656 217.316 39.9832 215.484 37.7282C213.722 35.4028 211.15 34.2401 207.768 34.2401C204.104 34.2401 201.25 35.579 199.206 38.2567C197.233 40.864 196.247 44.7045 196.247 49.7781C196.247 55.7677 197.409 60.1014 199.735 62.7792C202.131 65.4569 205.76 66.7958 210.622 66.7958C213.44 66.7958 216.224 66.3378 218.972 65.4217C221.72 64.5056 224.257 63.202 226.582 61.5108L230.81 72.2922ZM265.037 78.8456C259.258 78.8456 254.255 77.7181 250.027 75.4632C245.799 73.2083 242.558 70.0373 240.303 65.9502C238.118 61.7926 237.026 56.8952 237.026 51.2579C237.026 45.6205 238.224 40.6879 240.62 36.4598C243.016 32.2318 246.363 28.9551 250.661 26.6297C254.96 24.2339 259.998 23.0359 265.777 23.0359C269.582 23.0359 273.317 23.6349 276.981 24.8328C280.645 26.0308 283.605 27.6515 285.86 29.695L281.632 40.7935C279.518 39.1023 277.192 37.7987 274.655 36.8826C272.119 35.8961 269.652 35.4028 267.256 35.4028C262.958 35.4028 259.575 36.7065 257.109 39.3137C254.643 41.921 253.41 45.7967 253.41 50.9408C253.41 56.1553 254.608 60.0662 257.003 62.6735C259.47 65.2807 262.887 66.5844 267.256 66.5844C269.652 66.5844 272.119 66.1264 274.655 65.2103C277.192 64.2942 279.518 62.9553 281.632 61.1937L285.86 72.2922C283.534 74.3357 280.504 75.9565 276.769 77.1544C273.035 78.2819 269.124 78.8456 265.037 78.8456Z"
+              fill="white"
+            ></path>
+            <path
+              d="M119.156 116.697C119.907 113.887 119.597 111.737 118.226 110.247C116.856 108.756 114.46 108.006 111.039 107.996H97.9312L90.0293 137.644H96.3758L99.5716 125.643H103.763C104.529 125.605 105.293 125.761 105.983 126.098C106.263 126.273 106.497 126.513 106.664 126.798C106.831 127.083 106.927 127.404 106.943 127.733L108.089 137.644H114.89L113.78 128.438C113.56 126.383 112.615 125.173 110.974 124.808C112.959 124.26 114.77 123.214 116.236 121.768C117.652 120.374 118.661 118.621 119.156 116.697V116.697ZM113.08 116.802C112.806 118.018 112.062 119.075 111.009 119.742C110.009 120.373 108.549 120.683 106.693 120.683H100.802L102.872 112.937H108.769C110.619 112.937 111.89 113.252 112.59 113.877C113.29 114.502 113.44 115.492 113.08 116.802Z"
+              fill="white"
+            ></path>
+            <path
+              d="M137.479 116.449L136.674 119.449C136.339 118.377 135.629 117.461 134.674 116.869C133.56 116.2 132.276 115.87 130.978 115.919C129.157 115.919 127.367 116.395 125.786 117.299C124.066 118.285 122.58 119.633 121.43 121.249C120.164 122.996 119.236 124.966 118.695 127.055C118.127 128.914 118.007 130.881 118.345 132.795C118.602 134.307 119.411 135.67 120.615 136.621C121.924 137.556 123.509 138.025 125.116 137.951C126.551 137.954 127.97 137.647 129.275 137.05C130.581 136.454 131.741 135.582 132.678 134.495L131.848 137.626H138.034L143.676 116.449H137.479ZM134.669 126.95C134.286 128.674 133.435 130.259 132.208 131.53C131.68 132.047 131.054 132.454 130.367 132.727C129.68 133 128.946 133.134 128.207 133.12C126.632 133.12 125.571 132.62 125.001 131.555C124.431 130.49 124.416 129.005 124.936 127.055C125.332 125.315 126.197 123.717 127.437 122.434C127.967 121.902 128.597 121.48 129.292 121.194C129.987 120.908 130.732 120.764 131.483 120.769C133.023 120.769 134.073 121.304 134.614 122.369C135.154 123.434 135.209 124.94 134.679 126.945L134.669 126.95Z"
+              fill="white"
+            ></path>
+            <path
+              d="M165.747 116.462H147.927L146.612 121.403H156.985L143.346 133.299L142.181 137.664H160.585L161.901 132.724H150.773L164.636 120.658L165.747 116.462Z"
+              fill="white"
+            ></path>
+            <path
+              d="M185.236 117.24C183.581 116.294 181.693 115.833 179.789 115.91C177.641 115.891 175.515 116.345 173.563 117.24C171.663 118.125 169.994 119.438 168.686 121.075C167.32 122.792 166.333 124.78 165.791 126.906C165.207 128.797 165.135 130.808 165.581 132.736C165.99 134.337 167.007 135.714 168.416 136.577C169.85 137.46 171.684 137.902 173.918 137.902C176.043 137.92 178.145 137.468 180.074 136.577C181.968 135.691 183.629 134.376 184.925 132.736C186.294 131.02 187.283 129.033 187.826 126.906C188.411 125.015 188.482 123.002 188.031 121.075C187.637 119.48 186.634 118.103 185.236 117.24V117.24ZM181.625 126.896C181.069 128.976 180.254 130.536 179.154 131.566C178.092 132.578 176.674 133.129 175.208 133.101C171.974 133.101 170.909 131.033 172.012 126.896C172.556 124.842 173.389 123.294 174.513 122.25C175.588 121.222 177.026 120.659 178.514 120.685C180.054 120.685 181.104 121.185 181.645 122.25C182.185 123.315 182.17 124.84 181.625 126.896Z"
+              fill="white"
+            ></path>
+            <path
+              d="M252.598 116.45L251.792 119.451C251.457 118.378 250.747 117.463 249.792 116.87C248.68 116.196 247.396 115.861 246.096 115.905C244.272 115.909 242.48 116.39 240.9 117.301C239.178 118.287 237.69 119.635 236.539 121.251C235.274 122.999 234.346 124.968 233.803 127.056C233.24 128.917 233.121 130.882 233.453 132.797C233.711 134.309 234.519 135.672 235.723 136.622C237.049 137.566 238.654 138.034 240.28 137.953C241.683 137.947 243.069 137.644 244.346 137.062C245.663 136.471 246.833 135.595 247.771 134.497L246.941 137.628H253.128L258.774 116.45H252.598ZM249.772 126.951C249.391 128.675 248.541 130.26 247.316 131.532C246.787 132.047 246.161 132.453 245.474 132.726C244.788 132.999 244.054 133.133 243.315 133.122C241.735 133.122 240.675 132.622 240.105 131.557C239.534 130.492 239.524 129.007 240.04 127.056C240.437 125.318 241.302 123.72 242.54 122.436C243.071 121.904 243.703 121.483 244.398 121.197C245.094 120.911 245.839 120.766 246.591 120.771C248.132 120.771 249.175 121.304 249.722 122.371C250.302 123.406 250.317 124.941 249.772 126.946V126.951Z"
+              fill="white"
+            ></path>
+            <path
+              d="M207.248 122.155L208.829 116.389C208.162 116.087 207.434 115.945 206.703 115.974C205.274 115.976 203.869 116.344 202.622 117.044C201.486 117.667 200.499 118.53 199.731 119.574L200.547 116.469H194.365L188.674 137.646H194.945L197.891 126.59C198.236 125.115 199.044 123.788 200.197 122.805C201.382 121.879 202.855 121.399 204.358 121.45C205.364 121.445 206.357 121.687 207.248 122.155Z"
+              fill="white"
+            ></path>
+            <path
+              d="M229.111 117.346C227.831 116.369 226.249 115.871 224.64 115.941C223.074 115.943 221.532 116.317 220.139 117.031C218.743 117.717 217.54 118.74 216.638 120.007L216.663 119.862L217.718 116.466H211.567L209.996 122.352C209.996 122.417 209.961 122.487 209.946 122.552L203.495 146.804H209.796L213.052 134.583C213.363 135.661 214.08 136.577 215.052 137.138C216.181 137.786 217.468 138.105 218.768 138.058C220.595 138.063 222.394 137.609 224 136.738C225.709 135.796 227.184 134.482 228.316 132.893C229.561 131.154 230.472 129.199 231.001 127.127C231.573 125.24 231.703 123.247 231.381 121.302C231.118 119.756 230.313 118.353 229.111 117.346V117.346ZM224.655 127.027C224.27 128.724 223.424 130.282 222.209 131.528C221.134 132.556 219.696 133.117 218.208 133.088C216.658 133.088 215.608 132.553 215.052 131.498C214.497 130.443 214.467 128.922 215.012 126.917C215.402 125.18 216.268 123.585 217.513 122.312C218.042 121.795 218.668 121.388 219.354 121.114C220.041 120.839 220.775 120.702 221.514 120.712C223.014 120.712 224.06 121.272 224.605 122.377C225.15 123.482 225.185 125.047 224.655 127.027Z"
+              fill="white"
+            ></path>
+            <path
+              d="M285.083 115.761H278.582L277.581 117.852C277.501 117.957 277.426 118.062 277.336 118.192L277.231 118.362L269.229 129.553L267.569 116.467H261.007L264.343 136.539L256.966 146.805H263.283L265.108 144.199C265.163 144.119 265.218 144.054 265.268 143.969L267.404 140.924L267.474 140.844L277.011 127.238L285.083 115.761Z"
+              fill="white"
+            ></path>
+            <path
+              d="M73.9582 111.38L72.0577 118.301L82.7803 111.345L75.7786 137.642H82.8854L93.2329 98.7987L73.9582 111.38Z"
+              fill="#3395FF"
+            ></path>
+            <path
+              d="M62.4101 126.581L59.4594 137.642H74.0379L80.0044 115.14L62.4101 126.581Z"
+              fill="white"
+            ></path>
+            <path
+              d="M2.94184 138.04V110.546H6.34124V123.994L5.89297 123.546C6.31634 122.051 7.12572 120.881 8.32111 120.034C9.51651 119.187 10.9485 118.764 12.6171 118.764C14.2856 118.764 15.7425 119.162 16.9877 119.959C18.2329 120.756 19.2042 121.889 19.9015 123.359C20.6237 124.803 20.9848 126.509 20.9848 128.477C20.9848 130.444 20.6237 132.175 19.9015 133.669C19.2042 135.138 18.2205 136.284 16.9504 137.106C15.7052 137.903 14.2607 138.301 12.6171 138.301C10.9485 138.301 9.51651 137.89 8.32111 137.068C7.12572 136.222 6.31634 135.039 5.89297 133.52L6.30389 133.071V138.04H2.94184ZM11.9073 135.537C13.6755 135.537 15.0452 134.927 16.0165 133.706C16.9877 132.461 17.4733 130.718 17.4733 128.477C17.4733 126.285 16.9877 124.592 16.0165 123.396C15.0452 122.176 13.6755 121.566 11.9073 121.566C10.1142 121.566 8.73203 122.176 7.76077 123.396C6.78951 124.616 6.30389 126.335 6.30389 128.551C6.30389 130.793 6.78951 132.524 7.76077 133.744C8.73203 134.939 10.1142 135.537 11.9073 135.537ZM24.4461 146.52L23.7363 143.905C24.8819 143.631 25.8407 143.307 26.6127 142.933C27.4097 142.585 28.0696 142.124 28.5926 141.551C29.1156 141.003 29.5763 140.269 29.9748 139.347L31.2075 136.546L31.992 135.425L38.6787 119.25H42.0781L33.2995 139.646C32.6271 141.19 31.855 142.423 30.9834 143.344C30.1117 144.291 29.128 145 28.0323 145.474C26.9614 145.947 25.766 146.295 24.4461 146.52ZM31.2449 139.086L22.7651 119.25H26.3139L32.9259 135.425L31.2449 139.086Z"
+              fill="white"
+            ></path>
+          </svg>
+        </a>
+        <!-- end of nav logo -->
+        <!-- start of site nav menu -->
+        <ul class="nav__list mobile__nav__list">
+          <!-- start of nav menu  link item container -->
+          <li
+            class="order-1 lg:order-none text-black mb-4 pb-4 lg:mb-0 lg:pb-0 lg:text-white capitalize hover:text-lightBlue transition-all duration-300 relative after:absolute after:content-[''] after:w-0 after:h-1 after:bg-lightBlue after:left-1/2 after:-translate-x-1/2 after:bottom-4 after:transition-all ease-linear after:duration-300 hover:after:w-full group"
+          >
+            <!-- start of nav link -->
+            <a
+              href="#"
+              class="inline-block py-2 lg:py-8 font-extrabold uppercase lg:font-normal lg:capitalize"
+              >Payment</a
+            >
+            <!-- end of nav link -->
+
+            <!-- dropdown -->
+            <div
+              class="lg:absolute transition-all duration-300 left-4 top-28 lg:w-[450px] p-2 lg:p-6 bg-white rounded-lg lg:opacity-0 lg:pointer-events-none lg:group-hover:opacity-100 lg:group-hover:pointer-events-auto lg:group-hover:top-20 lg:after:content-[''] lg:after:absolute lg:after:w-full lg:after:h-8 lg:after:bg-transparent lg:after:-top-4 lg:after:left-0"
+            >
+              <!-- start of dropdown list -->
+              <ul class="text-black">
+                <!-- start of dropdown  item container -->
+                <li>
+                  <a
+                    href="#"
+                    class="flex gap-4 group/link hover:shadow-md p-2 lg:p-4"
+                  >
+                    <figure
+                      class="w-8 h-8 rounded-full bg-gradient-to-b from-blue-500 to-blue-500 group-hover/link:to-blue-300 self-centers shrink-0"
+                    >
+                      <img
+                        src="./build/resources/Images/nav-payment-gateway.svg"
+                        alt=""
+                      />
+                    </figure>
+
+                    <div>
+                      <div class="flex items-center mb-0.5">
+                        <p
+                          class="text-base font-extrabold group-hover/link:text-blue-600"
+                        >
+                          Payment Gateway
+                        </p>
+                        <span
+                          class="opacity-0 group-hover/link:opacity-100 inline-block group-hover/link:ml-2 transition-all duration-200 group-hover/link:text-blue-600"
+                          ><svg
+                            viewBox="0 0 24 24"
+                            focusable="false"
+                            class="w-5 h-5 fill-current"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <p class="text-sm text-grayText">
+                        Accept payments on your website & app
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <!-- end of dropdown  item container -->
+                <!-- start of dropdown  item container -->
+                <li>
+                  <a
+                    href="#"
+                    class="flex gap-4 group/link hover:shadow-md p-2 lg:p-4"
+                  >
+                    <figure
+                      class="w-8 h-8 rounded-full bg-gradient-to-b from-blue-500 to-blue-500 group-hover/link:to-blue-300 self-centers shrink-0"
+                    >
+                      <img
+                        src="./build/resources/Images/payment-link-icon.svg"
+                        alt=""
+                      />
+                    </figure>
+
+                    <div>
+                      <div class="flex items-center mb-0.5">
+                        <p
+                          class="text-base font-extrabold group-hover/link:text-blue-600"
+                        >
+                          Payment Links
+                        </p>
+                        <span
+                          class="opacity-0 group-hover/link:opacity-100 inline-block group-hover/link:ml-2 transition-all duration-200 group-hover/link:text-blue-600"
+                          ><svg
+                            viewBox="0 0 24 24"
+                            focusable="false"
+                            class="w-5 h-5 fill-current"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <p class="text-sm text-grayText">
+                        Create & send links to collect money
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <!-- end of dropdown  item container -->
+
+                <!-- start of dropdown  item container -->
+                <li>
+                  <a
+                    href="#"
+                    class="flex gap-4 group/link hover:shadow-md p-2 lg:p-4"
+                  >
+                    <figure
+                      class="w-8 h-8 rounded-full bg-gradient-to-b from-blue-500 to-blue-500 group-hover/link:to-blue-300 self-centers shrink-0"
+                    >
+                      <img
+                        src="./build/resources/Images/nav-payment-gateway.svg"
+                        alt=""
+                      />
+                    </figure>
+
+                    <div>
+                      <div class="flex items-center mb-0.5">
+                        <p
+                          class="text-base font-extrabold group-hover/link:text-blue-600"
+                        >
+                          Payment Gateway
+                        </p>
+                        <span
+                          class="opacity-0 group-hover/link:opacity-100 inline-block group-hover/link:ml-2 transition-all duration-200 group-hover/link:text-blue-600"
+                          ><svg
+                            viewBox="0 0 24 24"
+                            focusable="false"
+                            class="w-5 h-5 fill-current"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <p class="text-sm text-grayText">
+                        Accept payments on your website & app
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <!-- end of dropdown  item container -->
+                <!-- start of dropdown  item container -->
+                <li>
+                  <a
+                    href="#"
+                    class="flex gap-4 group/link hover:shadow-md p-2 lg:p-4"
+                  >
+                    <figure
+                      class="w-8 h-8 rounded-full bg-gradient-to-b from-blue-500 to-blue-500 group-hover/link:to-blue-300 self-centers shrink-0"
+                    >
+                      <img
+                        src="./build/resources/Images/payment-button.svg"
+                        alt=""
+                      />
+                    </figure>
+
+                    <div>
+                      <div class="flex items-center mb-0.5">
+                        <p
+                          class="text-base font-extrabold group-hover/link:text-blue-600"
+                        >
+                          Payment Buttons
+                        </p>
+                        <span
+                          class="opacity-0 group-hover/link:opacity-100 inline-block group-hover/link:ml-2 transition-all duration-200 group-hover/link:text-blue-600"
+                          ><svg
+                            viewBox="0 0 24 24"
+                            focusable="false"
+                            class="w-5 h-5 fill-current"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <p class="text-sm text-grayText">
+                        Create, Copy and Collect in 5 mins
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <!-- end of dropdown  item container -->
+                <!-- start of dropdown  item container -->
+                <li>
+                  <a
+                    href="#"
+                    class="flex gap-4 group/link hover:shadow-md p-2 lg:p-4"
+                  >
+                    <figure
+                      class="w-8 h-8 rounded-full bg-gradient-to-b from-blue-500 to-blue-500 group-hover/link:to-blue-300 self-centers shrink-0"
+                    >
+                      <img
+                        src="./build/resources/Images/nav-subscriptions.c13b66c6.svg"
+                        alt=""
+                      />
+                    </figure>
+
+                    <div>
+                      <div class="flex items-center mb-0.5">
+                        <p
+                          class="text-base font-extrabold group-hover/link:text-blue-600"
+                        >
+                          Subscriptions
+                        </p>
+                        <span
+                          class="opacity-0 group-hover/link:opacity-100 inline-block group-hover/link:ml-2 transition-all duration-200 group-hover/link:text-blue-600"
+                          ><svg
+                            viewBox="0 0 24 24"
+                            focusable="false"
+                            class="w-5 h-5 fill-current"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <p class="text-sm text-grayText">
+                        Collect recurring subscription payments
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <!-- end of dropdown  item container -->
+                <!-- start of dropdown  item container -->
+                <li>
+                  <a
+                    href="#"
+                    class="flex gap-4 group/link hover:shadow-md p-2 lg:p-4"
+                  >
+                    <figure
+                      class="w-8 h-8 rounded-full bg-gradient-to-b from-blue-500 to-blue-500 group-hover/link:to-blue-300 self-centers shrink-0"
+                    >
+                      <img
+                        src="./build/resources/Images/nav-invoices.259c823c.svg"
+                        alt=""
+                      />
+                    </figure>
+
+                    <div>
+                      <div class="flex items-center mb-0.5">
+                        <p
+                          class="text-base font-extrabold group-hover/link:text-blue-600"
+                        >
+                          Invoices
+                        </p>
+                        <span
+                          class="opacity-0 group-hover/link:opacity-100 inline-block group-hover/link:ml-2 transition-all duration-200 group-hover/link:text-blue-600"
+                          ><svg
+                            viewBox="0 0 24 24"
+                            focusable="false"
+                            class="w-5 h-5 fill-current"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+
+                      <p class="text-sm text-grayText">
+                        Create and send Invoices on the go
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <!-- end of dropdown  item container -->
+                <!-- start of dropdown  item container -->
+                <li class="lg:hidden mt-8 w-full">
+                  <a
+                    href="#"
+                    class="capitalize btn text-white w-full font-bold px-6 py-3 bg-lightBlue300 hover:bg-lightBlue500 transition-all duration-300 rounded-[4px] items-center text-base flex gap-4 group/link hover:shadow-md p-2 lg:p-4s"
+                    >Log in</a
+                  >
+                </li>
+                <!-- end of dropdown  item container -->
+              </ul>
+              <!-- end of dropdown list -->
+            </div>
+            <!-- end of dropdown -->
+          </li>
+          <!-- end of nav menu  link item container -->
+
+          <!-- start of nav menu  link item container -->
+          <li
+            class="order-2 lg:order-none text-black lg:text-white capitalize hover:text-lightBlue transition-all duration-300"
+          >
+            <!-- start of nav link -->
+            <a href="#" class="flex items-center gap-2 py-2 lg:py-8">
+              <div class="lg:hidden">
+                <img
+                  src="./build/resources/Images/resources.d551c1d0.svg"
+                  alt=""
+                />
+              </div>
+              Developers Docs
+              <span class="ms-auto pe-4 lg:pe-0 lg:hidden"
+                ><svg
+                  viewBox="0 0 24 24"
+                  focusable="false"
+                  class="w-5 h-5 fill-current"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                  ></path></svg></span
+            ></a>
+            <!-- end of nav link -->
+          </li>
+          <!-- end of nav menu  link item container -->
+          <!-- start of nav menu  link item container -->
+          <li
+            class="order-2 lg:order-none text-black lg:text-white capitalize hover:text-lightBlue transition-all duration-300"
+          >
+            <!-- start of nav link -->
+            <a href="#" class="flex items-center gap-2 py-2 lg:py-8">
+              <div class="lg:hidden">
+                <img
+                  src="./build/resources/Images/support.720e4739.svg"
+                  alt=""
+                />
+              </div>
+              Support
+              <span class="ms-auto pe-4 lg:pe-0 lg:hidden"
+                ><svg
+                  viewBox="0 0 24 24"
+                  focusable="false"
+                  class="w-5 h-5 fill-current"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                  ></path></svg></span
+            ></a>
+            <!-- end of nav link -->
+          </li>
+          <!-- end of nav menu  link item container -->
+          <!-- start of nav menu  link item container -->
+          <li
+            class="order-1 lg:order-none text-black lg:text-white capitalize hover:text-lightBlue transition-all duration-300"
+          >
+            <!-- start of nav link -->
+            <a href="#" class="flex items-center gap-2 py-2 lg:py-8">
+              <div class="lg:hidden">
+                <img
+                  src="./build/resources/Images/pricing.c21384d9.svg"
+                  alt=""
+                />
+              </div>
+              Pricing
+              <span class="ms-auto pe-4 lg:pe-0 lg:hidden"
+                ><svg
+                  viewBox="0 0 24 24"
+                  focusable="false"
+                  class="w-5 h-5 fill-current"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                  ></path></svg></span
+            ></a>
+            <!-- end of nav link -->
+          </li>
+          <!-- end of nav menu  link item container -->
+          <!-- start of nav menu  link item container -->
+          <li
+            class="text-black lg:text-white capitalize hover:text-lightBlue transition-all duration-300 hidden lg:block"
+          >
+            <!-- start of nav link -->
+            <a href="#" class="inline-block py-2 lg:py-8">Blog</a>
+            <!-- end of nav link -->
+          </li>
+          <!-- end of nav menu  link item container -->
+        </ul>
+        <!-- end of site nav menu -->
+
+        <!-- start of nav user actions menu-->
+        <ul class="flex gap-6 items-center ms-auto">
+          <!-- start of country dropdown/ user action item -->
+          <!-- TODO: will add it later for now i will just use one img -->
+          <li class="hidden lg:block">
+            <img
+              class="w-7 h-7"
+              src="./build/resources/Images/my-flag.d6e3653c.svg"
+              width="28"
+              height="20"
+              alt=""
+            />
+          </li>
+          <!-- end of country dropdown/ user action item -->
+          <!-- start of login user action item -->
+          <li class="text-white hidden xs:block">
+            <!-- start of login link action item -->
+            <a
+              href="#"
+              class="inline-block border border-lightBlue border-1 py-2 px-5 capitalize font-bold text-sm hover:bg-blue-950 transition-all duration-300 rounded-sm"
+              >Log in</a
+            >
+            <!-- end of login link action item -->
+          </li>
+          <!-- end of login user action item -->
+          <!-- start of signup user action item -->
+          <li class="hidden lg:block">
+            <!-- start of signup  link action item -->
+            <a
+              href="#"
+              class="flex gap-2 items-center border border-white border-1 bg-white py-2 px-5 capitalize font-bold text-sm text-lightBlue hover:text-lightBlue500 hover:bg-blue-100 transition-all duration-300 rounded-sm"
+            >
+              <span> Sign up </span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg> </span
+            ></a>
+            <!-- end of signup  link action item -->
+          </li>
+          <!-- end of signup user action item -->
+          <!-- start of mobile nav menu btn container -->
+          <li>
+            <!-- start of menu btn -->
+            <button
+              id="nav__toggle__btn"
+              class="toggle__menu"
+              aria-label="toggle menu button"
+            >
+              <!-- start of menu icon -->
+              <div class="menu__icon">
+                <div>&nbsp</div>
+              </div>
+              <!-- end of menu icon -->
+            </button>
+            <!-- end of menu btn -->
+          </li>
+          <!-- start of mobile nav menu btn -->
+        </ul>
+        <!-- end of nav user actions menu -->
+      </nav>
+    </header>
+
+    <!-- end of navigation -->
+
+    <main>
+      <!-- start of hero section -->
+      <section class="hero min-h-[calc(100vh+3rem)] bg-deepBlue">
+        <div
+          class="hero__container container gap-y-8 grid lg:grid-cols-[40fr_60fr]"
+        >
+          <!-- start of text content -->
+          <article
+            class="flex flex-col mt-16 w-full md:max-w-[80%] lg:max-w-[min(90%,25rem)] pt-12"
+          >
+            <!-- start of hero header -->
+            <header class="hero__header">
+              <div
+                class="hero__header__wrapper relative after:w-6 after:h-1 after:absolute after:bg-greenLight after:-bottom-8 after:content[''] mb-16"
+              >
+                <!-- start of hero title -->
+                <h1
+                  class="hero__title text-2xl md:text-4xl font-extrabold leading-tight text-white mb-3 font-mulish"
+                >
+                  Payments. Uncompromised.
+                </h1>
+                <!-- end of hero title -->
+              </div>
+              <!-- start of hero intro text -->
+              <p
+                class="hero__intro__text text-zinc-400 font-base md:text-lg font-mulish"
+              >
+                Robust security. Future tech ready. Fast support. Curlec, the
+                only way to supercharge Malaysian businesses.
+              </p>
+              <!-- end of hero intro text -->
+            </header>
+            <!-- end of hero header -->
+            <!-- start of hero footer -->
+            <footer class="hero__footer w-full mt-8">
+              <a
+                href="#"
+                class="hero__btn btn text-white font-bold px-6 py-3 bg-lightBlue300 hover:bg-lightBlue500 transition-all duration-300 inline-flex rounded-[4px] gap-2 items-center text-base"
+                >Get Started
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-3.5 h-3.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg> </span
+              ></a>
+            </footer>
+            <!-- end of hero footer -->
+          </article>
+          <!-- end of text content -->
+          <!-- start of img -->
+          <figure class="w-full self-center">
+            <img
+              src="./build/resources/Images/razorpayhero.jpg"
+              alt=""
+              class="select-none pointer-events-none w-full pt-8 object-cover"
+            />
+          </figure>
+          <!-- end of img -->
+        </div>
+      </section>
+      <!-- end of hero section -->
+
+      <!-- start of payment section -->
+      <section class="payment mt-10 relative overflow-hidden mb-10 pb-4">
+        <div class="payment__gateway__container container pt-4">
+          <!-- start of overlays img -->
+          <div
+            class="payment__overlays__img__container hidden lg:block"
+            aria-label="payment section overlays imgs container"
+          >
+            <img
+              src="./build/resources/Images/feature-section1-dottedrows.png"
+              alt="overlay dotted img"
+              loading="lazy"
+              width="240"
+              height="176"
+              class="w-60 h-44 absolute -top-32 left-36 z-[-1] pointer-events-none"
+            />
+            <img
+              src="./build/resources/Images/feature-section1-dottedrows.png"
+              alt="overlay dotted img"
+              loading="lazy"
+              width="240"
+              height="176"
+              class="w-60 h-44 absolute top-12 right-0 z-[-1] rotate-180 pointer-events-none"
+            />
+          </div>
+          <!-- end of overlays img -->
+
+          <!-- start of payment section header  -->
+          <header class="payment__header">
+            <div
+              class="payment__header__wrapper relative after:w-6 after:h-1 after:absolute after:bg-greenLight after:left-1/2 after:-bottom-4 after:-translate-x-1/2 after:content-[''] mb-24"
+            >
+              <!-- start of payment title  -->
+              <h2 class="text-center text-2xl font-extrabold">
+                Accept Payments with Curlec
+              </h2>
+              <!-- end of payment title  -->
+            </div>
+          </header>
+          <!-- end of payment section header  -->
+          <!-- start of payment gateway feature -->
+          <div
+            class="payment__gateway md:borders md:p-12 md:bg-white md:rounded-md relative mb-16"
+          >
+            <!-- start payment gateway text content -->
+            <article class="md:max-w-[500px]">
+              <!--start of  payment gateway  card shape -->
+              <svg
+                viewBox="0 0 639.2000122070312 489.4624938964844"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+                class="md:hidden stroke-1 h-full w-full absolute -z-[1] featureCardSVG transition-all duration-200 featureCardSVG [filter:drop-shadow(1px_0_2px_rgba(0,0,0,0.125))]"
+              >
+                <path
+                  d="m 0 6 
+                a 6 6 0 0 1 6 -6 
+                h 540.2000122070312 
+                a 16 16 0 0 1 11 5 
+                l 77 77 
+                a 16 16 0 0 1 5 11 
+                v 390.4624938964844 
+                a 6 6 0 0 1 -6 6 
+                h -627.2000122070312 
+                a 6 6 0 0 1 -6 -6 
+                z"
+                  fill="#fff"
+                ></path>
+              </svg>
+
+              <!-- end of payment gateway  card shape -->
+              <!-- start of payment gateway header -->
+
+              <div class="p-6 md:p-0">
+                <header class="payment__gateway__header mb-8">
+                  <!-- start of payment gateway title -->
+                  <figure
+                    class="payment__gateway__img__container md:hidden w-12 h-12 rounded-full grid place-items-center bg-lightBlue -z-[10] absolute -right-2 sm:right-2 top-5 sm:top-2 bg-gradient-to-bl from-lightBlue to-blue-300"
+                  >
+                    <img
+                      class="w-full h-full"
+                      src="./build/resources/Images/payment-gateway.svg"
+                      alt=""
+                    />
+                  </figure>
+                  <h3
+                    class="text-xl md:text-[1.75rem] font-bold leading-relaxed pe-6"
+                  >
+                    <span>
+                      Supercharge your business with the all-powerful
+                    </span>
+                    <span class="text-lightBlue500"> Payment Gateway </span>
+                  </h3>
+                  <!-- end of payment gateway title -->
+                </header>
+                <!-- end of payment gateway header -->
+                <!-- payment gateway features list -->
+                <ul class="payment__gate__features mb-8">
+                  <!-- payment gateway feature item -->
+                  <li
+                    class="payment__gateway__feature__item grid grid-cols-[max-content,auto] md:grid-cols-[repeat(2,max-content)] md:items-center gap-5 leading-loose"
+                  >
+                    <span class="pt-2 md:pt-0"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 fill-greenLight"
+                        stroke-width="2"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span>Multiple Payment Methods</span>
+                  </li>
+                  <!-- end of payment gateway feature item -->
+                  <!-- payment gateway feature item -->
+                  <li
+                    class="payment__gateway__feature__item grid grid-cols-[max-content,auto] md:grid-cols-[repeat(2,max-content)] md:items-center gap-5 leading-loose"
+                  >
+                    <span class="pt-2 md:pt-0"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 fill-greenLight"
+                        stroke-width="2"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span>Superior Checkout Experience</span>
+                  </li>
+                  <!-- end of payment gateway feature item -->
+                  <!-- payment gateway feature item -->
+                  <li
+                    class="payment__gateway__feature__item grid grid-cols-[max-content,auto] md:grid-cols-[repeat(2,max-content)] md:items-center gap-5 leading-loose"
+                  >
+                    <span class="pt-2 md:pt-0"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 fill-greenLight"
+                        stroke-width="2"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span>Industry Leading Success Rate</span>
+                  </li>
+                  <!-- end of payment gateway feature item -->
+                  <li
+                    class="payment__gateway__feature__item grid grid-cols-[max-content,auto] md:grid-cols-[repeat(2,max-content)] md:items-center gap-5 leading-loose"
+                  >
+                    <span class="pt-2 md:pt-0"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 fill-greenLight"
+                        stroke-width="2"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span>Easy to Integrate</span>
+                  </li>
+                  <!-- end of payment gateway feature item -->
+                  <!-- payment gateway feature item -->
+                  <li
+                    class="payment__gateway__feature__item grid grid-cols-[max-content,auto] md:grid-cols-[repeat(2,max-content)] md:items-center gap-5 leading-loose"
+                  >
+                    <span class="pt-2 md:pt-0"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 fill-greenLight"
+                        stroke-width="2"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span>Secure and Reliable</span>
+                  </li>
+                  <!-- end of payment gateway feature item -->
+                  <!-- payment gateway feature item -->
+                  <li
+                    class="payment__gateway__feature__item grid grid-cols-[max-content,auto] md:grid-cols-[repeat(2,max-content)] md:items-center gap-5 leading-loose"
+                  >
+                    <span class="pt-2 md:pt-0"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 fill-greenLight"
+                        stroke-width="2"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span>In-depth Reporting and Insights</span>
+                  </li>
+                  <!-- end of payment gateway feature item -->
+                </ul>
+                <!-- start of payment gateway footer/ link container -->
+                <footer
+                  class="payment__gateway__footer flex flex-col md:flex-row gap-6"
+                >
+                  <a
+                    href="#"
+                    class="hero__btn btn order-1 md:order-none text-white font-bold px-6 py-3 bg-lightBlue300 hover:bg-lightBlue500 transition-all duration-300 inline-flex justify-center md:justify-normal rounded-[4px] gap-2 items-center text-base"
+                  >
+                    <span> Get Started </span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2.5"
+                        stroke="currentColor"
+                        class="w-3.5 h-3.5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                        />
+                      </svg> </span
+                  ></a>
+                  <a
+                    href="#"
+                    class="hero__btn btn text-lightBlue500 hover:text-grayBlue font-bold transition-all duration-300 inline-flex rounded-[4px] gap-2 items-center text-[15px]"
+                  >
+                    <span>Know more</span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="3"
+                        stroke="currentColor"
+                        class="w-3 h-3"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </footer>
+                <!-- end of payment gateway footer/ link container -->
+              </div>
+            </article>
+            <!-- end of text content -->
+
+            <!-- start of img container  -->
+            <figure
+              class="gate__payment__suite__overlay__img absolute hidden md:block right-0 bottom-0 max-w-[600px] w-auto pointer-events-none"
+              aria-label="payment gateway overlay img container"
+            >
+              <img
+                src="./build/resources/Images/payment-suite.png"
+                class=""
+                alt="payment suite overlay img"
+              />
+            </figure>
+            <!-- end of img container  -->
+          </div>
+          <!-- end of payment gateway feature -->
+
+          <!-- start of payment section footer -->
+          <footer class="payment__footer">
+            <!-- start of payment link card list -->
+            <ul
+              class="payment__card__list grid md:grid-cols-2 lg:grid-cols-3 gap-10"
+            >
+              <!-- start of payment link card container -->
+              <li class="payment__link__card__container group">
+                <!-- start of payment link card -->
+                <a href="" class="payment__link__card__anchor block h-full">
+                  <article class="payment__link__card relative h-full">
+                    <!--start of  payment__link card shape -->
+
+                    <svg
+                      viewBox="0 0 349.32501220703125 225"
+                      xmlns="http://www.w3.org/2000/svg"
+                      preserveAspectRatio="none"
+                      class="stroke-2 stroke-[#818597] h-full w-full absolute -z-[1] featureCardSVG transition-all duration-200 featureCardSVG group-hover:[filter:drop-shadow(0_0_4px_rgba(0,0,0,0.125))]"
+                      style="stroke-opacity: 0.15"
+                    >
+                      <path
+                        d="m 0 6 
+                a 6 6 0 0 1 6 -6 
+                h 250.32501220703125 
+                a 16 16 0 0 1 11 5 
+                l 77 77 
+                a 16 16 0 0 1 5 11 
+                v 126 
+                a 6 6 0 0 1 -6 6 
+                h -337.32501220703125 
+                a 6 6 0 0 1 -6 -6 
+                z"
+                        fill="#fff"
+                      ></path>
+                    </svg>
+                    <!-- end of payment__link card shape -->
+                    <div
+                      class="payment__link__card__container py-6 pb-5 ps-5 pe-8 min-h-[12rem]"
+                    >
+                      <!--start of payment link card header -->
+                      <header
+                        class="payment__link__card__header grid grid-rows-[auto_1fr]"
+                      >
+                        <!--start of payment link card img -->
+                        <figure
+                          class="payment__link__card__img__container lg:w-12 w-14 lg:h-12 h-14 rounded-full grid place-items-center bg-lightBlue -z-[10] absolute right-2 sm:right-8 md:right-3 lg:right-0 top-2 sm:top-0 lg:top-4 group-hover:bg-gradient-to-bl group-hover:from-lightBlue group-hover:to-blue-300"
+                        >
+                          <img
+                            class="w-full h-full"
+                            src="./build/resources/Images/payment-link-icon.svg"
+                            alt=""
+                          />
+                        </figure>
+                        <!--end of payment link card img -->
+                        <!--start of payment link card title -->
+                        <h4
+                          class="payment__link__card__title text-xl font-extrabold text-deepBlue mb-4"
+                        >
+                          Payment Links
+                        </h4>
+                        <!--end of payment link card title -->
+                        <!-- start of payment link card intro text -->
+                        <p
+                          class="payment__link__card__intro__text text-grayText mb-8"
+                        >
+                          Share payment link via email, SMS, WhatsApp, Telegram,
+                          chatbot etc. and get paid immediately.
+                        </p>
+                        <!-- end of payment link card intro text -->
+                      </header>
+                      <!--end of payment link card header -->
+
+                      <!--start of payment link card footer -->
+                      <footer class="payment__link__card__footer self-center">
+                        <div
+                          class="overlay_img absolute right-0 opacity-0 pointer-events-none group-hover:opacity-100"
+                        >
+                          <img
+                            src="./build/resources/Images/features-wave.svg"
+                            alt=""
+                          />
+                        </div>
+                        <p
+                          class="btn text-lightBlue500 hover:text-grayBlue font-bold transition-all duration-300 inline-flex rounded-[4px] gap-2 items-center text-[15px]"
+                        >
+                          <span>Know more</span>
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="3"
+                              stroke="currentColor"
+                              class="w-3 h-3"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                              />
+                            </svg>
+                          </span>
+                        </p>
+                      </footer>
+                      <!-- end of payment link card footer -->
+                    </div>
+                  </article>
+                </a>
+                <!-- end of payment link card -->
+              </li>
+              <!-- end of payment link card container -->
+              <!-- start of payment link card container -->
+              <li class="payment__link__card__container group">
+                <!-- start of payment link card -->
+                <a href="" class="payment__link__card__anchor block h-full">
+                  <article class="payment__link__card relative h-full">
+                    <!--start of  payment__link card shape -->
+
+                    <svg
+                      viewBox="0 0 349.32501220703125 225"
+                      xmlns="http://www.w3.org/2000/svg"
+                      preserveAspectRatio="none"
+                      class="stroke-2 stroke-[#818597] h-full w-full absolute -z-[1] featureCardSVG transition-all duration-200 featureCardSVG group-hover:[filter:drop-shadow(0_0_4px_rgba(0,0,0,0.125))]"
+                      style="stroke-opacity: 0.15"
+                    >
+                      <path
+                        d="m 0 6 
+               a 6 6 0 0 1 6 -6 
+               h 250.32501220703125 
+               a 16 16 0 0 1 11 5 
+               l 77 77 
+               a 16 16 0 0 1 5 11 
+               v 126 
+               a 6 6 0 0 1 -6 6 
+               h -337.32501220703125 
+               a 6 6 0 0 1 -6 -6 
+               z"
+                        fill="#fff"
+                      ></path>
+                    </svg>
+                    <!-- end of payment__link card shape -->
+                    <div
+                      class="payment__link__card__container py-6 pb-5 ps-5 pe-8 min-h-[12rem]"
+                    >
+                      <!--start of payment link card header -->
+                      <header
+                        class="payment__link__card__header grid grid-rows-[auto_1fr]"
+                      >
+                        <!--start of payment link card img -->
+                        <figure
+                          class="payment__link__card__img__container lg:w-12 w-14 lg:h-12 h-14 rounded-full grid place-items-center bg-lightBlue -z-[10] absolute right-2 sm:right-8 md:right-3 lg:right-0 top-2 sm:top-0 lg:top-4 group-hover:bg-gradient-to-bl group-hover:from-lightBlue group-hover:to-blue-300"
+                        >
+                          <img
+                            class="w-full h-full"
+                            src="./build/resources/Images/payment-pages-icon.svg"
+                            alt=""
+                          />
+                        </figure>
+                        <!--end of payment link card img -->
+                        <!--start of payment link card title -->
+                        <h4
+                          class="payment__link__card__title text-xl font-extrabold text-deepBlue mb-4"
+                        >
+                          Payment Pages
+                        </h4>
+                        <!--end of payment link card title -->
+                        <!-- start of payment link card intro text -->
+                        <p
+                          class="payment__link__card__intro__text text-grayText mb-8"
+                        >
+                          Take your store online instantly with zero coding.
+                          Accept payments with a custom-branded online store.
+                        </p>
+                        <!-- end of payment link card intro text -->
+                      </header>
+                      <!--end of payment link card header -->
+
+                      <!--start of payment link card footer -->
+                      <footer class="payment__link__card__footer self-center">
+                        <div
+                          class="overlay_img absolute right-0 opacity-0 pointer-events-none group-hover:opacity-100"
+                        >
+                          <img
+                            src="./build/resources/Images/features-wave.svg"
+                            alt=""
+                          />
+                        </div>
+                        <p
+                          class="btn text-lightBlue500 hover:text-grayBlue font-bold transition-all duration-300 inline-flex rounded-[4px] gap-2 items-center text-[15px]"
+                        >
+                          <span>Know more</span>
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="3"
+                              stroke="currentColor"
+                              class="w-3 h-3"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                              />
+                            </svg>
+                          </span>
+                        </p>
+                      </footer>
+                      <!-- end of payment link card footer -->
+                    </div>
+                  </article>
+                </a>
+                <!-- end of payment link card -->
+              </li>
+
+              <!-- end of payment link card container -->
+              <!-- start of payment link card container -->
+              <li class="payment__link__card__container group">
+                <!-- start of payment link card -->
+                <a href="" class="payment__link__card__anchor block h-full">
+                  <article class="payment__link__card relative h-full">
+                    <!--start of  payment__link card shape -->
+
+                    <svg
+                      viewBox="0 0 349.32501220703125 225"
+                      xmlns="http://www.w3.org/2000/svg"
+                      preserveAspectRatio="none"
+                      class="stroke-2 stroke-[#818597] h-full w-full absolute -z-[1] featureCardSVG transition-all duration-200 featureCardSVG group-hover:[filter:drop-shadow(0_0_4px_rgba(0,0,0,0.125))]"
+                      style="stroke-opacity: 0.15"
+                    >
+                      <path
+                        d="m 0 6 
+                 a 6 6 0 0 1 6 -6 
+                 h 250.32501220703125 
+                 a 16 16 0 0 1 11 5 
+                 l 77 77 
+                 a 16 16 0 0 1 5 11 
+                 v 126 
+                 a 6 6 0 0 1 -6 6 
+                 h -337.32501220703125 
+                 a 6 6 0 0 1 -6 -6 
+                 z"
+                        fill="#fff"
+                      ></path>
+                    </svg>
+                    <!-- end of payment__link card shape -->
+                    <div
+                      class="payment__link__card__container py-6 pb-5 ps-5 pe-8 min-h-[12rem]"
+                    >
+                      <!--start of payment link card header -->
+                      <header
+                        class="payment__link__card__header grid grid-rows-[auto_1fr]"
+                      >
+                        <!--start of payment link card img -->
+                        <figure
+                          class="payment__link__card__img__container lg:w-12 w-14 lg:h-12 h-14 rounded-full grid place-items-center bg-lightBlue -z-[10] absolute right-2 sm:right-8 md:right-3 lg:right-0 top-2 sm:top-0 lg:top-4 group-hover:bg-gradient-to-bl group-hover:from-lightBlue group-hover:to-blue-300"
+                        >
+                          <img
+                            class="w-full h-full"
+                            src="./build/resources/Images/payment-buttons-icon.svg"
+                            alt=""
+                          />
+                        </figure>
+                        <!--end of payment link card img -->
+                        <!--start of payment link card title -->
+                        <h4
+                          class="payment__link__card__title text-xl font-extrabold text-deepBlue mb-4"
+                        >
+                          Payment Buttons
+                        </h4>
+                        <!--end of payment link card title -->
+                        <!-- start of payment link card intro text -->
+                        <p
+                          class="payment__link__card__intro__text text-grayText mb-8"
+                        >
+                          Create payment buttons within minutes to start
+                          collecting online payments, fees and more.
+                        </p>
+                        <!-- end of payment link card intro text -->
+                      </header>
+                      <!--end of payment link card header -->
+
+                      <!--start of payment link card footer -->
+                      <footer class="payment__link__card__footer self-center">
+                        <div
+                          class="overlay_img absolute right-0 opacity-0 pointer-events-none group-hover:opacity-100"
+                        >
+                          <img
+                            src="./build/resources/Images/features-wave.svg"
+                            alt=""
+                          />
+                        </div>
+                        <p
+                          class="btn text-lightBlue500 hover:text-grayBlue font-bold transition-all duration-300 inline-flex rounded-[4px] gap-2 items-center text-[15px]"
+                        >
+                          <span>Know more</span>
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="3"
+                              stroke="currentColor"
+                              class="w-3 h-3"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                              />
+                            </svg>
+                          </span>
+                        </p>
+                      </footer>
+                      <!-- end of payment link card footer -->
+                    </div>
+                  </article>
+                </a>
+                <!-- end of payment link card -->
+              </li>
+
+              <!-- end of payment link card container -->
+            </ul>
+            <!-- end of payment link card list -->
+          </footer>
+          <!-- end of payment section footer -->
+        </div>
+      </section>
+      <!-- end of payment section -->
+      <!-- start of feature section -->
+      <section class="features pt-52 pb-64">
+        <!-- <div class="wrapper"> -->
+        <div class="container relative z-[4]">
+          <!--start of features header  -->
+          <header class="text-center text-white max-w-[28rem] mx-auto mb-10">
+            <!-- start of features title -->
+            <h2 class="title">Features!</h2>
+            <!-- end of features title -->
+            <!-- start of features subtitle -->
+            <p class="features__intro__text">
+              Make no compromises when it comes to payments. Empower your
+              business with the right tools to accept online payments with the
+              best customer experience!
+            </p>
+          </header>
+          <!-- start of features body -->
+          <div class="features__content">
+            <!-- start of features list -->
+            <ul
+              class="feature__list grid lg:grid-cols-4 gap-x-8 gap-y-8 pb-28 lg:pb-0"
+            >
+              <!-- start of features list item container-->
+              <li class="px-4 tracking-[0.01em]">
+                <!-- start of features list item -->
+                <article>
+                  <!-- start of feature header -->
+                  <header
+                    class="text-white grid gap-4 grid-rows-[auto_auto_1fr] h-full"
+                  >
+                    <!-- start of feature image -->
+                    <figure>
+                      <img
+                        class="w-11 h-11 object-cover"
+                        src="./build/resources/Images/instant-activation-icon.svg"
+                        alt="instant activation icon"
+                      />
+                    </figure>
+                    <!-- end of feature image -->
+                    <!-- start of feature title -->
+                    <h3 class="font-extrabold">Instant Activation</h3>
+                    <!-- end of feature title -->
+
+                    <!-- start of feature intro text -->
+                    <!-- start of feature intro text -->
+                    <p class="">
+                      Get activated within minutes. Completely online onboarding
+                      with minimum documentation
+                    </p>
+                    <!-- end of feature intro text -->
+                  </header>
+                  <!-- end of feature header -->
+                </article>
+                <!-- end of features list item -->
+              </li>
+              <!-- end of features list item container-->
+              <!-- start of features list item container-->
+              <li class="px-4 tracking-[0.01em]">
+                <!-- start of features list item -->
+                <article>
+                  <!-- start of feature header -->
+                  <header
+                    class="text-white grid gap-4 grid-rows-[auto_auto_1fr] h-full"
+                  >
+                    <!-- start of feature image -->
+                    <figure>
+                      <img
+                        class="w-11 h-11 object-cover"
+                        src="./build/resources/Images/easy-integration.svg"
+                        alt="easy integration icon"
+                      />
+                    </figure>
+                    <!-- end of feature image -->
+                    <!-- start of feature title -->
+                    <h3 class="font-extrabold">Easy Integration</h3>
+                    <!-- end of feature title -->
+
+                    <!-- start of feature intro text -->
+                    <!-- start of feature intro text -->
+                    <p>
+                      With plugins for all major platforms, integrate and go
+                      live with Curlec within hours.
+                    </p>
+                    <!-- end of feature intro text -->
+                  </header>
+                  <!-- end of feature header -->
+                </article>
+                <!-- end of features list item -->
+              </li>
+              <!-- end of features list item container-->
+              <!-- start of features list item container-->
+              <li class="px-4">
+                <!-- start of features list item -->
+                <article>
+                  <!-- start of feature header -->
+                  <header
+                    class="text-white grid gap-4 grid-rows-[auto_auto_1fr] h-full"
+                  >
+                    <!-- start of feature image -->
+                    <figure>
+                      <img
+                        class="w-11 h-11 object-cover"
+                        src="./build/resources/Images/api-driven-icon.svg"
+                        alt="api driven icon"
+                      />
+                    </figure>
+                    <!-- end of feature image -->
+                    <!-- start of feature title -->
+                    <h3 class="font-extrabold">API Driven</h3>
+                    <!-- end of feature title -->
+
+                    <!-- start of feature intro text -->
+                    <!-- start of feature intro text -->
+                    <p>
+                      Build your business for scale with our complete API-driven
+                      automation that requires zero manual intervention.
+                    </p>
+                    <!-- end of feature intro text -->
+                  </header>
+                  <!-- end of feature header -->
+                </article>
+                <!-- end of features list item -->
+              </li>
+              <!-- end of features list item container-->
+              <!-- start of features list item container-->
+              <li class="px-4 tracking-[0.01em]">
+                <!-- start of features list item -->
+                <article>
+                  <!-- start of feature header -->
+                  <header
+                    class="text-white grid gap-4 grid-rows-[auto_auto_1fr] h-full"
+                  >
+                    <!-- start of feature image -->
+                    <figure>
+                      <img
+                        class="w-11 h-11 object-cover"
+                        src="./build/resources/Images/payment-modes.svg"
+                        alt="payment modes icon"
+                      />
+                    </figure>
+                    <!-- end of feature image -->
+                    <!-- start of feature title -->
+                    <h3 class="font-extrabold">Multiple Payment Methods</h3>
+                    <!-- end of feature title -->
+
+                    <!-- start of feature intro text -->
+                    <!-- start of feature intro text -->
+                    <p>
+                      Offer your customers the luxury of all major payment
+                      methods including Credit/Debit cards, eWallets & FPX.
+                    </p>
+                    <!-- end of feature intro text -->
+                  </header>
+                  <!-- end of feature header -->
+                </article>
+                <!-- end of features list item -->
+              </li>
+              <!-- end of features list item container-->
+              <!-- start of features list item container-->
+              <li class="px-4 tracking-[0.01em]">
+                <!-- start of features list item -->
+                <article>
+                  <!-- start of feature header -->
+                  <header
+                    class="text-white grid gap-4 grid-rows-[auto_auto_1fr] h-full"
+                  >
+                    <!-- start of feature image -->
+                    <figure>
+                      <img
+                        class="w-11 h-11 object-cover"
+                        src="./build/resources/Images/simple-pricing.svg"
+                        alt="simple pricing icon"
+                      />
+                    </figure>
+                    <!-- end of feature image -->
+                    <!-- start of feature title -->
+                    <h3 class="font-extrabold">Simple Pricing</h3>
+                    <!-- end of feature title -->
+
+                    <!-- start of feature intro text -->
+                    <!-- start of feature intro text -->
+                    <p>
+                      Our innovative payment solutions with competitive pricing
+                      make payments simpler.
+                    </p>
+                    <!-- end of feature intro text -->
+                  </header>
+                  <!-- end of feature header -->
+                </article>
+                <!-- end of features list item -->
+              </li>
+              <!-- end of features list item container-->
+              <!-- start of features list item container-->
+              <li class="px-4 tracking-[0.01em]">
+                <!-- start of features list item -->
+                <article>
+                  <!-- start of feature header -->
+                  <header
+                    class="text-white grid gap-4 grid-rows-[auto_auto_1fr] h-full"
+                  >
+                    <!-- start of feature image -->
+                    <figure>
+                      <img
+                        class="w-11 h-11 object-cover"
+                        src="./build/resources/Images/support-my.5c2ae2ef.svg"
+                        alt="best support icon"
+                      />
+                    </figure>
+                    <!-- end of feature image -->
+                    <!-- start of feature title -->
+                    <h3 class="font-extrabold">Best in Industry Support</h3>
+                    <!-- end of feature title -->
+
+                    <!-- start of feature intro text -->
+                    <!-- start of feature intro text -->
+                    <p>
+                      Fast response from local team, available on email and
+                      phone based support to help you in your every step.
+                    </p>
+                    <!-- end of feature intro text -->
+                  </header>
+                  <!-- end of feature header -->
+                </article>
+                <!-- end of features list item -->
+              </li>
+              <!-- end of features list item container-->
+              <!-- start of features list item container-->
+              <li class="px-4 tracking-[0.01em]">
+                <!-- start of features list item -->
+                <article>
+                  <!-- start of feature header -->
+                  <header
+                    class="text-white grid gap-4 grid-rows-[auto_auto_1fr] h-full"
+                  >
+                    <!-- start of feature image -->
+                    <figure>
+                      <img
+                        class="w-11 h-11 object-cover"
+                        src="./build/resources/Images/dashboard-reporting-icon.svg"
+                        alt="dashboardreporting icon"
+                      />
+                    </figure>
+                    <!-- end of feature image -->
+                    <!-- start of feature title -->
+                    <h3 class="font-extrabold">Dashboard Reporting</h3>
+                    <!-- end of feature title -->
+
+                    <!-- start of feature intro text -->
+                    <!-- start of feature intro text -->
+                    <p>
+                      Real-time data and insights from your Curlec Dashboard to
+                      make better business decisions.
+                    </p>
+                    <!-- end of feature intro text -->
+                  </header>
+                  <!-- end of feature header -->
+                </article>
+                <!-- end of features list item -->
+              </li>
+              <!-- end of features list item container-->
+              <!-- start of features list item container-->
+              <li class="px-4 tracking-[0.01em]">
+                <!-- start of features list item -->
+                <article>
+                  <!-- start of feature header -->
+                  <header
+                    class="text-white grid gap-4 grid-rows-[auto_auto_1fr] h-full"
+                  >
+                    <!-- start of feature image -->
+                    <figure>
+                      <img
+                        class="w-11 h-11 object-cover"
+                        src="./build/resources/Images/secure-icon.svg"
+                        alt="dashboardreporting icon"
+                      />
+                    </figure>
+                    <!-- end of feature image -->
+                    <!-- start of feature title -->
+                    <h3 class="font-extrabold">Secure</h3>
+                    <!-- end of feature title -->
+
+                    <!-- start of feature intro text -->
+                    <!-- start of feature intro text -->
+                    <p>
+                      100% PCI DSS compliant and certified solution which
+                      removes your burden of compliance.
+                    </p>
+                    <!-- end of feature intro text -->
+                  </header>
+                  <!-- end of feature header -->
+                </article>
+                <!-- end of features list item -->
+              </li>
+              <!-- end of features list item container-->
+            </ul>
+            <!-- end of features list -->
+          </div>
+          <!-- end of features body -->
+        </div>
+        <!-- </div> -->
+      </section>
+      <!-- end of feature section -->
+      <!-- start of partners section -->
+      <section class="partners bg-[#f3f7fc] -mt-60 pt-48 group">
+        <!-- start of partners  container -->
+        <div
+          class="container client__container grid md:grid-cols-[55fr,45fr] gap-8 gap-y-12 pt-3"
+        >
+          <!-- start of partners text content -->
+          <article class="pt-20 max-w-[28rem]">
+            <!-- start of partners header -->
+            <header>
+              <h2
+                class="text-xl md:text-2xl font-extrabold title after:left-0 after:translate-x-0"
+              >
+                Enabling payments of 8,000,000+ businesses powered by Razorpay
+                Group
+              </h2>
+              <p class="partners__intro__text text-sm md:text-base mb-8">
+                We make it easier for you to focus on building great products
+                while we work on simplifying your payments. Become one of us by
+                joining thousands of our happy users.
+              </p>
+            </header>
+            <!-- end of partners header -->
+            <!-- start of partners footer -->
+            <footer>
+              <a
+                href="#"
+                class="hero__btn btn text-white text-sm md:text-base font-bold px-6 py-3 bg-lightBlue300 hover:bg-lightBlue500 transition-all duration-300 inline-flex rounded-[4px] gap-2 items-center"
+                >Get Started
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-3.5 h-3.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg> </span
+              ></a>
+            </footer>
+            <!-- end of partners footer -->
+          </article>
+          <!-- end of partners text content -->
+          <!-- start of client img container -->
+          <figure
+            class="max-h-[430px] overflow-hidden relative after:content-[''] before:content-[''] after:absolute before:absolute after:w-full before:w-full after:h-20 before:h-12 after:z-10 before:z-10 before:[background-image:linear-gradient(to_bottom,#eff6ff,transparent_100%)] before:-top-2 before:left-0 after:[background-image:linear-gradient(to_top,#eff6ff,transparent_100%)] after:-bottom-2 after:left-0 after:after:blur-[1px] before:backdrop-blur-[1px]"
+          >
+            <div class="animate-uplifter">
+              <img
+                src="./build/resources/Images/companies.png"
+                alt="partners imgs"
+              />
+              <img
+                aria-hidden="true"
+                src="./build/resources/Images/companies.png"
+                alt="partners imgs"
+              />
+            </div>
+          </figure>
+          <!-- end of client img container -->
+        </div>
+        <!-- end partners  container -->
+      </section>
+      <!-- end of partners section -->
+      <!-- start of Testimonials -->
+      <section class="testimonials relative mb-4">
+        <!-- start of testimonials container -->
+        <div class="container mt-24 relative">
+          <!-- start of bg overlay image container-->
+          <div
+            class="overlays__img__container absolute top-14 left-0 hidden lg:block"
+          >
+            <img
+              class="w-48"
+              src="./build/resources/Images/feature-section1-dottedrows.png"
+              alt="dotted rows"
+            />
+          </div>
+          <!-- end of bg overlay image container-->
+          <!-- start of testimonials header -->
+          <header class="testimonials__header">
+            <!-- start of testimonials title -->
+            <h2 class="text-center title mb-28">
+              An Experience <br />
+              People Love to Talk About
+            </h2>
+            <!-- end of testimonials title -->
+          </header>
+
+          <!-- end of testimonials header -->
+          <!-- start of testimonials content -->
+          <div class="testimonials__content relative mb-12 py-8">
+            <!-- start of testimonials list -->
+            <ul class="testimonials__list">
+              <!-- start of testimonial item container -->
+              <li class="testimonials__item__container">
+                <article
+                  class="testimonials__item grid lg:grid-cols-[47fr,53fr] gap-16"
+                >
+                  <!-- start of testimonials text container -->
+                  <div
+                    class="lg:[grid-column:2/span_1] grid [grid-template-rows:min-content_auto] justify-self-center lg:justify-self-auto lg:pt-14 text-center lg:text-left max-w-[25rem]"
+                  >
+                    <!-- start of testimonials header -->
+                    <header class="">
+                      <!-- testimonials name -->
+                      <h3 class="text-2xl font-extrabold">Jared Chuah</h3>
+                      <!-- end of testimonials name -->
+                      <!-- start of testimonials job title -->
+                      <p class="font-semibold py-1 mb-2">
+                        Co-Founder & Head of Growth
+                      </p>
+                      <figure class="text-gray-400">
+                        <img
+                          src="./build/resources/Images/nateskin.21bf9ab4.png"
+                          alt=""
+                          class="h-12 mx-auto lg:mx-0"
+                        />
+                      </figure>
+                      <!-- end of testimonials job title -->
+                    </header>
+                    <!-- end of testimonials header -->
+                    <!-- start of testimonials body -->
+                    <div class="lg:[grid-row:1/2] mt-12 lg:mt-0">
+                      <blockquote
+                        class="text-3xl leading-snug font-extralight relative after:content-[''] after:absolute after:-top-8 after:left-0 after:bg-[url('../Images/quotes.svg')] after:w-11 after:h-11 after:bg-no-repeat after:bg-contain"
+                      >
+                        Boosted our FPX & eWallet transactions by 51.3%
+                      </blockquote>
+                      <button
+                        type="button"
+                        class="underline text-sm italic inline-block py-2"
+                      >
+                        Learn More
+                      </button>
+                      <div class="h-0s overflow-hiddens">
+                        <p
+                          class="relative after:content-[''] after:absolute after:-top-8 after:left-0 after:bg-[url('../Images/quotes.svg')] after:w-11 after:h-11 after:bg-no-repeat after:bg-contain [display:none]"
+                        >
+                          Switching to Curlec was one of the best decisions
+                          we've made for Nateskin. The transition was seamless
+                          and we were sorted in under an hour. Not only has
+                          Curlec boosted our FPX and eWallet transactions by a
+                          staggering 51.3%, but we've also enjoyed a 20% savings
+                          in fees. A standout feature for us is managing
+                          payments directly within Shopify's dashboard. This has
+                          significantly streamlined our refunds process,
+                          enhancing our Customer Service team's efficiency.
+                          Curlec truly offers a blend of cost-efficiency, ease
+                          of use, and top-notch support.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- end of testimonials body -->
+                  </div>
+                  <!-- end of testimonials text container -->
+                  <!-- start of testimonials img__container -->
+                  <figure
+                    class="testimonials__img__container [grid-row:1/span_1] justify-self-center lg:[grid-column:1/span_1] lg:[grid-row:1/span_1] lg:justify-self-end relative before:content-[''] before:absolute before:w-full before:h-full before:[border:8px_solid_#0b72e7] before:top-5 before:right-5"
+                  >
+                    <img
+                      class="h-80 w-80 object-cover relative [box-shadow:-15px_15px_20px_#334155dd]"
+                      src="./build/resources/Images/xl-jared_nateskin.avif"
+                      alt="testimonial img"
+                    />
+                  </figure>
+                  <!-- end of testimonials img__container -->
+                </article>
+              </li>
+              <!-- end of testimonial item container-->
+            </ul>
+            <!-- end of testimonials list -->
+
+            <!-- testimonials next and prev btn container-->
+            <div>
+              <!-- prev btn -->
+              <button
+                type="button"
+                class="absolute top-1/2 -translate-y-1/2 left-0 after:content-[''] after:absolute after:w-16 after:h-16 after:bg-blue-100 after:rounded-full w-24 h-24 flex justify-center items-center bg-blue-50 text-gray-500 rounded-full after:-z-10 z-10 opacity-75"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5 8.25 12l7.5-7.5"
+                  />
+                </svg>
+              </button>
+              <!-- end of prev btn -->
+              <!-- next btn -->
+
+              <button
+                type="button"
+                class="absolute top-1/2 -translate-y-1/2 right-0 after:content-[''] after:absolute after:w-16 after:h-16 after:bg-blue-100 after:rounded-full w-24 h-24 flex justify-center items-center bg-blue-50 text-gray-500 rounded-full after:-z-10 z-10 opacity-75"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- end of testimonials next and prev btn container-->
+          </div>
+          <!-- end of testimonials content -->
+
+          <!-- start of testimonials footer -->
+          <div class="testimonials__footer flex justify-center">
+            <div class="flex gap-1.5">
+              <div
+                class="w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
+              ></div>
+              <div
+                class="w-3 h-3 bg-blue-500 rounded-full cursor-pointer"
+              ></div>
+              <div
+                class="w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
+              ></div>
+              <div
+                class="w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
+              ></div>
+              <div
+                class="w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
+              ></div>
+              <div
+                class="w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
+              ></div>
+              <div
+                class="w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
+              ></div>
+              <div
+                class="w-3 h-3 bg-gray-300 rounded-full cursor-pointer"
+              ></div>
+            </div>
+          </div>
+          <!-- end of testimonials footer -->
+        </div>
+        <!-- end of testimonials container -->
+      </section>
+      <!-- end of Testimonials -->
+
+      <!-- start of cta section -->
+      <section class="cta h-[50vh]s px-8">
+        <!-- start of cta container -->
+        <div
+          class="container relative z-10 pt-28 pb-24 grid grid-cols-[70fr_30fr]"
+        >
+          <!-- start of cta text content -->
+          <article>
+            <!-- start of cta header -->
+            <header class="text-white max-w-[29rem]">
+              <!-- start of cta title -->
+              <h2
+                class="title text-lg lg:text-2xl after:left-0 after:translate-x-0 font-extrabold"
+              >
+                Supercharge Your Business With Curlec
+              </h2>
+              <!-- end of cta title -->
+              <!-- start of cta intro text -->
+              <p class="text-sm lg:text-base">
+                Sign up now to experience the future of payments and offer your
+                customers the best checkout experience.
+              </p>
+              <!-- end of cta intro text -->
+            </header>
+            <!-- end of of cta header -->
+            <!-- start of cta main content -->
+            <div class="my-8 mb-5">
+              <!-- start of cta features list -->
+              <ul
+                class="payment__gate__features text-white grid md:grid-cols-[repeat(2,min-content)] lg:grid-cols-[repeat(3,min-content)] gap-5 gap-y-2 text-sm:lg:text-base"
+              >
+                <!-- start of cta feature item -->
+                <li
+                  class="payment__gateway__feature__item grid grid-cols-[repeat(2,max-content)] items-center gap-3 leading-loose"
+                >
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5 fill-greenLight"
+                      stroke-width="2"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>Quick onboarding </span>
+                </li>
+                <!-- end cta feature item -->
+                <!-- start of cta feature item -->
+                <li
+                  class="payment__gateway__feature__item grid grid-cols-[repeat(2,max-content)] items-center gap-3 leading-loose"
+                >
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5 fill-greenLight"
+                      stroke-width="2"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>Access to entire product suite</span>
+                </li>
+                <!-- end of cta feature item -->
+                <!-- start of cta feature item -->
+                <li
+                  class="payment__gateway__feature__item grid grid-cols-[repeat(2,max-content)] items-center gap-3 leading-loose"
+                >
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5 fill-greenLight"
+                      stroke-width="2"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>API access</span>
+                </li>
+                <!-- end of cta feature item -->
+              </ul>
+              <!-- end of cta features list -->
+            </div>
+            <!-- end of cta main content -->
+
+            <!-- start of cta footer -->
+            <footer class="hero__footer w-full pb-12 lg:p-0 mb-4">
+              <a
+                href="#"
+                class="hero__btn btn text-lightBlue300 hover:text-lightBlue500 font-extrabold px-6 py-3 bg-white transition-all duration-300 inline-flex rounded-[4px] gap-2 items-center capitalize text-sm"
+                >Sign up now
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-3.5 h-3.5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg> </span
+              ></a>
+            </footer>
+            <!-- end of cta footer -->
+          </article>
+          <!-- start of cta text content -->
+          <!-- start of cta img container -->
+          <figure class="lg:flex justify-end items-end hidden">
+            <img
+              class="w-3/4"
+              src="./build/resources/Images/footer-signup.6bf7413f.svg"
+              alt=""
+            />
+          </figure>
+          <!-- end of cta img container -->
+        </div>
+        <!-- end of cta container -->
+      </section>
+      <!-- end of cta section -->
+    </main>
+
+    <!-- start of footer -->
+    <footer class="bg-[#f4f8ff] -mt-28 pt-44 pb-16">
+      <div class="container grid lg:grid-cols-[2fr_1.5fr_1.5fr_2fr] gap-6">
+        <div class="logo__container px-4">
+          <a href="#" class="inline-block mb-2">
+            <img
+              class="h-[50px]"
+              src="./build/resources/Images/curlec-logo-dark.57e1890e.svg"
+              alt=""
+            />
+          </a>
+          <div class="text__container text-sm text-grayText">
+            <p class="footer__text">
+              Curlec is a full-stack payments solution that makes it easy for
+              businesses of all sizes to collect payments, automate payouts and
+              take control of their cash flow.
+            </p>
+            <p class="footer__text mt-4">
+              Today, Curlec is part of the Razorpay group - India’s leading
+              Payments and Banking Platform for businesses. The company serves
+              over 8 million businesses and is backed by some of the world's
+              marquee investors that include Sequoia Capital India, Tiger
+              Global, Lone Pine Capital and TCV, and was part of the prestigious
+              Silicon Valley tech accelerator, Y Combinator.
+            </p>
+
+            <p class="mt-8 flex items-center gap-4">
+              Regulated by:
+              <span>
+                <img
+                  class="h-8"
+                  src="./build/resources/Images/bank-negara-my.984a086b.png"
+                  alt=""
+                />
+              </span>
+            </p>
+
+            <p class="mt-2 flex gap-4 items-center">
+              A member of:
+              <span>
+                <img
+                  class="h-4"
+                  src="./build/resources/Images/paynet.851c9dcd.png"
+                  alt=""
+                />
+              </span>
+            </p>
+
+            <div class="mt-8">
+              <img
+                class="h-20"
+                src="./build/resources/Images/curlec-pci-logo.38819ad1.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <nav>
+          <div class="mb-4">
+            <p
+              class="mb-1 font-extrabold tracking-wider text-gray-500 text-base uppercase"
+            >
+              Payments
+            </p>
+            <ul class="text-base text-lightBlue500 space-y-1">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-slate-800 transition-all duration-300"
+                  >Payment Gateway</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-slate-800 transition-all duration-300"
+                  >Payment Pages</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-slate-800 transition-all duration-300"
+                  >Payment Links</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-slate-800 transition-all duration-300"
+                  >Payment Buttons</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-slate-800 transition-all duration-300"
+                  >Subscriptions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-slate-800 transition-all duration-300"
+                  >Invoices</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p
+              class="mb-1 font-extrabold tracking-wider text-gray-500 text-base uppercase"
+            >
+              DEVELOPERS
+            </p>
+            <ul class="text-base text-lightBlue500 space-y-1">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-slate-800 transition-all duration-300"
+                  >Docs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-slate-800 transition-all duration-300"
+                  >API Reference</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav>
+          <div class="mb-4">
+            <p
+              class="mb-1 font-extrabold tracking-wider text-gray-500 text-base uppercase"
+            >
+              COMPANY
+            </p>
+            <ul class="text-base text-lightBlue500 space-y-1">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-slate-800 transition-all duration-300"
+                  >About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-slate-800 transition-all duration-300"
+                  >Careers
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-slate-800 transition-all duration-300"
+                  >Terms of Use
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-slate-800 transition-all duration-300"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <p
+              class="mb-1 font-extrabold tracking-wider text-gray-500 text-base uppercase"
+            >
+              HELP & SUPPORT
+            </p>
+            <ul class="text-base text-lightBlue500 space-y-1">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-slate-800 transition-all duration-300"
+                  >Support</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p
+              class="mb-1 font-extrabold tracking-wider text-gray-500 text-base uppercase"
+            >
+              RESOURCES
+            </p>
+            <ul class="text-base text-lightBlue500 space-y-1">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-slate-800 transition-all duration-300"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div>
+          <address class="not-italic">
+            <div>
+              <div
+                class="mb-4 font-extrabold tracking-wider text-gray-500 text-base uppercase"
+              >
+                FIND US ONLINE
+              </div>
+              <div class="flex gap-4 mb-6">
+                <a href="#">
+                  <img
+                    src="./build/resources/Images/facebook-icon.svg"
+                    alt=""
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./build/resources/Images/instagram-icon.svg"
+                    alt=""
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./build/resources/Images/linkedin-icon.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div>
+              <p
+                class="mb-1.5 font-extrabold tracking-wider text-gray-500 text-base uppercase"
+              >
+                office address
+              </p>
+              <p class="text-sm mb-4">
+                Private Office 57, Level 8, Komune Co-Working, Vertical
+                Corporate Tower B, The Vertical, Bangsar South City, No. 8 Jalan
+                Kerinchi, 59200 Kuala Lumpur, Malaysia.
+              </p>
+            </div>
+            <div class="mb-3">
+              <p
+                class="mb-1.5 font-extrabold tracking-wider text-gray-500 text-base uppercase"
+              >
+                CONTACT US
+              </p>
+              <a href="tel:+6031234567" class="text-sm">+6031234567</a>
+            </div>
+          </address>
+          <small class="text-sm"
+            >© Curlec Sdn Bhd <time id="copyright__date">2024</time> <br />
+            All Rights Reserved</small
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+  </body>
+</html>
+
+<!-- i don't know how i got this way -->
+
+<!-- wall are in the way how do i escape -->
