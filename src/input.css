@@ -13,12 +13,13 @@
     @apply w-6 h-1 absolute bg-greenLight left-1/2 -bottom-4 -translate-x-1/2 content-[''];
   }
   .container {
-    max-width: min(100%, 67.5rem);
+    max-width: min(90%, 67.5rem);
     margin-inline: auto;
   }
 
   .hero {
-    min-height: calc(100vh + 3rem);
+    /* min-height: calc(100vh + 3rem); */
+    clip-path: polygon(0 0%, 100% 0, 100% 90%, 92% 97%, 0% 85%);
   }
   .features {
     @apply relative;
@@ -27,12 +28,25 @@
     @apply bg-[#2071c5]  h-full absolute content-[''] top-0 left-0 w-full z-[3];
     background-image: linear-gradient(127deg, #0d51b1 30%, #2071c5);
     /* clip-path: polygon(0 30%, 100% 0, 100% 85%, 90% 100%, 0% 85%); */
-    clip-path: polygon(0 20%, 100% 0, 100% 85%, 93% 97%, 0% 85%);
+    clip-path: polygon(0 8%, 100% 0, 100% 85%, 100% 100%, 0% 97%);
+  }
+
+  @media screen and (min-width: 992px) {
+    .features::before {
+      clip-path: polygon(0 20%, 100% 0, 100% 85%, 93% 97%, 0% 85%);
+    }
   }
   .features::after {
-    @apply absolute content-[''] left-0 top-3 w-[80%] h-[25%]  bg-blue-50 z-[2];
+    @apply absolute content-[''] left-0 top-3 w-[100%] h-[10%]  bg-blue-50 z-[2];
     /* clip-path: polygon(0% 40%, 13% 0%, 100% 90%, 0% 100%); */
-    clip-path: polygon(0% 40%, 9% 0%, 100% 90%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  }
+  @media screen and (min-width: 992px) {
+    .features::after {
+      @apply top-3 w-[80%] h-[25%];
+      /* clip-path: polygon(0% 40%, 13% 0%, 100% 90%, 0% 100%); */
+      clip-path: polygon(0% 40%, 9% 0%, 100% 90%, 0% 100%);
+    }
   }
   .cta {
     @apply relative;
@@ -40,12 +54,114 @@
   .cta::after {
     @apply bg-[#2071c5]  h-full absolute content-[''] top-0 left-0 w-full z-[3];
     background-image: linear-gradient(127deg, #0d51b1, #65bfef);
-    clip-path: polygon(0% 0%, 100% 40%, 100% 88%, 93% 70%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 20%, 100% 88%, 93% 70%, 0% 100%);
   }
   .cta::before {
     @apply bg-blue-50  h-full absolute content-[''] top-0 left-0 w-full z-[3];
     background-image: linear-gradient(#eff6ff 40%, #f4f8ff);
-    clip-path: polygon(0% 50%, 93% 0%, 100% 20%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 40%, 100% 0%, 100% 20%, 100% 100%, 0% 100%);
+  }
+  @media screen and (min-width: 992px) {
+    .cta::after {
+      clip-path: polygon(0% 0%, 100% 40%, 100% 88%, 93% 70%, 0% 100%);
+    }
+    .cta::before {
+      clip-path: polygon(0% 50%, 93% 0%, 100% 20%, 100% 100%, 0% 100%);
+    }
+  }
+  .nav__list,
+  .mobile__nav__list {
+    @apply flex flex-col gap-2 lg:flex-row lg:gap-6 fixed lg:static w-full min-[400px]:w-4/5 sm:w-3/5 lg:w-auto h-screen lg:h-auto overflow-auto lg:overflow-visible bg-white lg:bg-transparent -right-[100%] top-0 px-6 pt-8 lg:px-0 lg:pt-0 z-10 transition-all duration-300;
+  }
+  .nav__open .nav__list,
+  .nav__open .mobile__nav__list {
+    @apply right-0;
+  }
+
+  /* mobile site menu toggle container */
+  .toggle__menu {
+    @apply border-none w-[2.7rem] h-[2.7rem] bg-transparent lg:hidden;
+    /* border: none;
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: transparent; */
+  }
+
+  /* toggle btn icon container */
+  .menu__icon {
+    @apply h-full relative flex items-center justify-center z-[999];
+    /* height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+  /* toggle btn icon  */
+  .menu__icon > div,
+  .menu__icon::after,
+  .menu__icon::before {
+    @apply content-[''] w-4/5 h-1 bg-white rounded-[3px] transition-all duration-300;
+    /* content: "";
+    width: 80%;
+    height: 4px;
+    background-color: white;
+    border-radius: 3px;
+    transition: var(--TRANSITION);
+    transition-duration: 0.2s; */
+  }
+
+  .menu__icon::after,
+  .menu__icon::before {
+    @apply absolute;
+    /* position: absolute; */
+  }
+  .menu__icon::after {
+    @apply top-[25%];
+    /* top: 22%; */
+  }
+  .menu__icon::before {
+    @apply bottom-[25%];
+    /* bottom: 22%; */
+  }
+
+  /* toggle btn icon hover  */
+  .menu__icon:hover > div,
+  .menu__icon:hover::after,
+  .menu__icon:hover::before {
+    @apply bg-white;
+    /* background-color: var(--CLR-WHITE); */
+  }
+  .menu__icon:hover::after {
+    @apply top-[20%];
+    /* top: 18%; */
+  }
+  .menu__icon:hover::before {
+    @apply bottom-[20%];
+    /* bottom: 18%; */
+  }
+  /* nav bar open menu icon start here */
+  .nav__open .menu__icon > div {
+    @apply w-[7px] h-[7px] rounded-[50%];
+    /* width: 7px;
+    height: 7px;
+    border-radius: 50%; */
+  }
+  .nav__open .menu__icon::after {
+    @apply top-1/2 -translate-y-1/2 rotate-[135deg];
+    /* top: 50%; */
+    /* transform: translateY(-50%) rotate(135deg); */
+  }
+  .nav__open .menu__icon::before {
+    @apply bottom-1/2 translate-y-1/2 -rotate-[135deg];
+    /* bottom: 50%; */
+    /* transform: translateY(50%) rotate(-135deg); */
+  }
+
+  .nav__open .menu__icon:hover > div,
+  .nav__open .menu__icon:hover::after,
+  .nav__open .menu__icon:hover::before {
+    @apply bg-red-400;
+    background-color: red;
   }
 }
 @layer utilities {
